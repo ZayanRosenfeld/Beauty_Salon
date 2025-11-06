@@ -1,0 +1,25 @@
+Attention to the commands used to launch a server:
+Atençao para as comandas que estao usadas para lançamento de serverador:
+
+Launch server: uvicorn main:app --reload
+Enter API by bashing that link in browser: http://127.0.0.1:8000/docs
+
+IMPORTANT / IMPORTANTE
+connection to the phone is different from PC, you have to replace link:
+conexao no celular e diferente do computador, tem que trocar link do computador:
+
+http://127.0.0.1:8000
+
+To the IP of you PC:
+Para IP do seu computador, exemplo:
+
+http://192.168.0.105:8000
+
+Dispositivos devem estar na mesma rede WI-FI, testes mostraram que voce pode criar hotspot no celular ou computador se
+necessario
+
+-----------------------------------------------------------------
+Criaçao de banco de dados no caso item "salon.db" nao esta aqui esta facil
+bastante lançar "init_database.py" para criar banco limpo. Nao tenha medo de limpar durante os testes.
+
+- Zayan
