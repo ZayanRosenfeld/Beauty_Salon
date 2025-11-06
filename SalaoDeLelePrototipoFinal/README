@@ -1,3 +1,14 @@
+/// BEAUTY SALON BACKEND AND API PART ///
+
+TOOLS UTILIZED:
+- PyCharm
+- Python
+- SQLite
+- FastAPI
+
+FRAMEWORKS UTILIZED:
+Pandas, SQLAlchemy, Uvicorn, Pydantic.
+
 Attention to the commands used to launch a server:
 Atençao para as comandas que estao usadas para lançamento de serverador:
 
@@ -22,4 +33,7 @@ necessario
 Criaçao de banco de dados no caso item "salon.db" nao esta aqui esta facil
 bastante lançar "init_database.py" para criar banco limpo. Nao tenha medo de limpar durante os testes.
 
+It honestly so far was the biggest and complex project I worked on, and honestly, it is only for now. Though, it was pleasant and very helpful.
+I will make bigger things. 
 - Zayan
+
