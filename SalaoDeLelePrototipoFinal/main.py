@@ -5,6 +5,8 @@ from pydantic import BaseModel
 from typing import Optional, List
 from datetime import datetime
 import os
+from sqlalchemy.orm import sessionmaker, declarative_base, relationship, Session
+from fastapi import FastAPI, HTTPException, Depends
 
 app = FastAPI()
 
@@ -153,7 +155,11 @@ def create_appointment(payload: AppointmentCreate):
             raise HTTPException(status_code=400, detail="Either client_id or name must be provided.")
 
     # 3) Create appointment linked to client
-    new_appt = Appointment(client_id=client.id, service=payload.service)
+    new_appt = Appointment(
+        client_id=client.id,
+        service=payload.service,
+        created_at=datetime.now()
+    )
     db.add(new_appt)
 
     # 4) Update client stats: increment total_visits
@@ -165,15 +171,23 @@ def create_appointment(payload: AppointmentCreate):
     db.close()
     return new_appt
 
-
-# Get history for a client
-@app.get("/clients/{client_id}/history", response_model=List[AppointmentOut])
-def client_history(client_id: int):
+@app.delete("/appointments/{appointment_id}")
+def delete_appointment(appointment_id: int, db: Session = Depends(get_db)):
+    """
+    Deleta um agendamento específico pelo ID.
+    """
     db = SessionLocal()
-    client = db.query(Client).filter(Client.id == client_id).first()
-    if not client:
+    appointment = db.query(Appointment).filter(Appointment.id == appointment_id).first()
+
+    if appointment is None:
         db.close()
-        raise HTTPException(status_code=404, detail="Client not found.")
-    appts = db.query(Appointment).filter(Appointment.client_id == client_id).order_by(Appointment.created_at.desc()).all()
+        # Retorna 404 Not Found explicitamente se o ID não existir
+        raise HTTPException(status_code=404, detail=f"Agendamento com ID {appointment_id} não encontrado")
+
+    db.delete(appointment)
+    db.commit()
     db.close()
-    return appts
+
+    # Retorna uma resposta de sucesso (204 No Content é o padrão para DELETE,
+    # mas o FastAPI envia 200/204 dependendo da implementação)
+    return {"message": f"Agendamento {appointment_id} cancelado com sucesso."}

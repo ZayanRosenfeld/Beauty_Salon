@@ -1,0 +1,272 @@
+{
+    "services": [
+        {
+            "service": "corte de cabelo",
+            "count": 9,
+            "price": 35.0,
+            "total_revenue": 315.0
+        },
+        {
+            "service": "hidratacao",
+            "count": 7,
+            "price": 30.0,
+            "total_revenue": 210.0
+        },
+        {
+            "service": "manicure",
+            "count": 7,
+            "price": 55.0,
+            "total_revenue": 385.0
+        },
+        {
+            "service": "relaxamento",
+            "count": 1,
+            "price": 50.0,
+            "total_revenue": 50.0
+        }
+    ],
+    "total_revenue": 960.0,
+    "service_counts": {
+        "corte de cabelo": 9,
+        "hidratacao": 7,
+        "manicure": 7,
+        "relaxamento": 1
+    },
+    "clients": [
+        {
+            "id": 1,
+            "name": "Lili",
+            "phone": "32998765432"
+        },
+        {
+            "id": 2,
+            "name": "Marta",
+            "phone": "32991234567"
+        },
+        {
+            "id": 3,
+            "name": "Cidinha",
+            "phone": "32987654321"
+        },
+        {
+            "id": 4,
+            "name": "Karla",
+            "phone": "32976543210"
+        },
+        {
+            "id": 5,
+            "name": "Samara",
+            "phone": "32999675353"
+        },
+        {
+            "id": 6,
+            "name": "Claudinha",
+            "phone": "32998456532"
+        },
+        {
+            "id": 7,
+            "name": "Janete",
+            "phone": "32999231121"
+        },
+        {
+            "id": 8,
+            "name": "Thais",
+            "phone": "32998763171"
+        },
+        {
+            "id": 9,
+            "name": "Laryssa",
+            "phone": "11998765454"
+        },
+        {
+            "id": 10,
+            "name": "Regina",
+            "phone": "32998901125"
+        },
+        {
+            "id": 11,
+            "name": "Beatriz",
+            "phone": "23999651365"
+        },
+        {
+            "id": 12,
+            "name": "Eduarda",
+            "phone": "32995070313"
+        },
+        {
+            "id": 13,
+            "name": "Taisia",
+            "phone": "32999637474"
+        }
+    ],
+    "appointments": [
+        {
+            "id": 1,
+            "client_id": 1,
+            "client_name": "Lili",
+            "service": "Corte de cabelo",
+            "created_at": "2025-09-21 13:03:50"
+        },
+        {
+            "id": 2,
+            "client_id": 1,
+            "client_name": "Lili",
+            "service": "Hidratação",
+            "created_at": "2025-09-22 12:26:13"
+        },
+        {
+            "id": 3,
+            "client_id": 2,
+            "client_name": "Marta",
+            "service": "Corte de cabelo",
+            "created_at": "2025-09-22 12:26:20"
+        },
+        {
+            "id": 4,
+            "client_id": 3,
+            "client_name": "Cidinha",
+            "service": "Manicure",
+            "created_at": "2025-10-03 12:28:26"
+        },
+        {
+            "id": 5,
+            "client_id": 4,
+            "client_name": "Karla",
+            "service": "Corte de Cabelo",
+            "created_at": "2025-10-03 12:30:26"
+        },
+        {
+            "id": 6,
+            "client_id": 5,
+            "client_name": "Samara",
+            "service": "Manicure",
+            "created_at": "2025-11-14 23:40:22"
+        },
+        {
+            "id": 7,
+            "client_id": 6,
+            "client_name": "Claudinha",
+            "service": "Corte de cabelo",
+            "created_at": "2025-11-14 23:36:19"
+        },
+        {
+            "id": 8,
+            "client_id": 7,
+            "client_name": "Janete",
+            "service": "Corte de cabelo",
+            "created_at": "2025-11-14 23:37:11"
+        },
+        {
+            "id": 9,
+            "client_id": 8,
+            "client_name": "Thais",
+            "service": "Corte de cabelo",
+            "created_at": "2025-11-14 23:38:15"
+        },
+        {
+            "id": 10,
+            "client_id": 8,
+            "client_name": "Thais",
+            "service": "Hidratação",
+            "created_at": "2025-11-14 23:38:51"
+        },
+        {
+            "id": 11,
+            "client_id": 4,
+            "client_name": "Karla",
+            "service": "Manicure",
+            "created_at": "2025-11-14 23:39:32"
+        },
+        {
+            "id": 12,
+            "client_id": 9,
+            "client_name": "Laryssa",
+            "service": "Hidratação",
+            "created_at": "2025-11-14 23:39:47"
+        },
+        {
+            "id": 13,
+            "client_id": 10,
+            "client_name": "Regina",
+            "service": "Hidratação",
+            "created_at": "2025-11-14 23:40:22"
+        },
+        {
+            "id": 14,
+            "client_id": 5,
+            "client_name": "Samara",
+            "service": "Hidratação",
+            "created_at": "2025-11-14 23:40:42"
+        },
+        {
+            "id": 15,
+            "client_id": 11,
+            "client_name": "Beatriz",
+            "service": "Corte de cabelo",
+            "created_at": "2025-11-14 23:41:01"
+        },
+        {
+            "id": 16,
+            "client_id": 12,
+            "client_name": "Eduarda",
+            "service": "Manicure",
+            "created_at": "2025-11-14 23:41:17"
+        },
+        {
+            "id": 17,
+            "client_id": 4,
+            "client_name": "Karla",
+            "service": "Relaxamento",
+            "created_at": "2025-11-14 23:42:26"
+        },
+        {
+            "id": 18,
+            "client_id": 13,
+            "client_name": "Taisia",
+            "service": "Corte de cabelo",
+            "created_at": "2025-11-14 23:42:48"
+        },
+        {
+            "id": 19,
+            "client_id": 5,
+            "client_name": "Samara",
+            "service": "Manicure",
+            "created_at": "2025-11-14 23:43:07"
+        },
+        {
+            "id": 20,
+            "client_id": 13,
+            "client_name": "Taisia",
+            "service": "Hidratação",
+            "created_at": "2025-11-14 23:43:35"
+        },
+        {
+            "id": 21,
+            "client_id": 5,
+            "client_name": "Samara",
+            "service": "Corte de cabelo",
+            "created_at": "2025-11-14 23:44:11"
+        },
+        {
+            "id": 22,
+            "client_id": 11,
+            "client_name": "Beatriz",
+            "service": "Manicure",
+            "created_at": "2025-11-14 23:44:26"
+        },
+        {
+            "id": 23,
+            "client_id": 11,
+            "client_name": "Beatriz",
+            "service": "Hidratação",
+            "created_at": "2025-11-14 23:44:37"
+        },
+        {
+            "id": 24,
+            "client_id": 12,
+            "client_name": "Eduarda",
+            "service": "Manicure",
+            "created_at": "2025-11-14 23:44:51"
+        }
+    ]
+}
